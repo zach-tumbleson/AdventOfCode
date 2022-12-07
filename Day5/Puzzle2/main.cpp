@@ -35,7 +35,7 @@ int main(int argc, char *argv[]) {
     }
 
     while(getline(inFile, line)){
-        cout << line << endl;
+        //cout << line << endl;
         stringstream stream = stringstream(line);
         string junk;
         int numberToMove;
@@ -48,9 +48,9 @@ int main(int argc, char *argv[]) {
         stream >> junk;
         stream >> destination;
 
-        printStacks(crates);
+        //printStacks(crates);
         makeMove(crates, numberToMove, origin, destination);
-        printStacks(crates);
+        //printStacks(crates);
     }
 
     for(int i = 0; i < crates.size(); i++) {
